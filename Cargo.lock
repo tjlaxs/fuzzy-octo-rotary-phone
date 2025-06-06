@@ -294,6 +294,7 @@ checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 [[package]]
 name = "bevy"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "bevy_internal",
 ]
@@ -301,32 +302,34 @@ dependencies = [
 [[package]]
 name = "bevy_a11y"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "accesskit",
- "bevy_app",
- "bevy_derive",
- "bevy_ecs",
- "bevy_reflect",
+ "bevy_app 0.16.0-dev",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
 ]
 
 [[package]]
 name = "bevy_animation"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_log",
  "bevy_math",
  "bevy_mesh",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_time",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "blake3",
  "derive_more",
  "downcast-rs",
@@ -344,31 +347,33 @@ dependencies = [
 [[package]]
 name = "bevy_anti_aliasing"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_core_pipeline",
- "bevy_derive",
+ "bevy_derive 0.16.0-dev",
  "bevy_diagnostic",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_math",
- "bevy_reflect",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "tracing",
 ]
 
 [[package]]
 name = "bevy_app"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_derive",
- "bevy_ecs",
- "bevy_platform",
- "bevy_reflect",
- "bevy_tasks",
- "bevy_utils",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_tasks 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "cfg-if",
  "console_error_panic_hook",
  "ctrlc",
@@ -381,20 +386,40 @@ dependencies = [
 ]
 
 [[package]]
+name = "bevy_app"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4491cc4c718ae76b4c6883df58b94cc88b32dcd894ea8d5b603c7c7da72ca967"
+dependencies = [
+ "bevy_derive 0.16.1",
+ "bevy_ecs 0.16.1",
+ "bevy_platform 0.16.1",
+ "bevy_reflect 0.16.1",
+ "bevy_tasks 0.16.1",
+ "bevy_utils 0.16.1",
+ "cfg-if",
+ "downcast-rs",
+ "log",
+ "thiserror 2.0.12",
+ "variadics_please",
+]
+
+[[package]]
 name = "bevy_asset"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "async-broadcast",
  "async-fs",
  "async-lock",
  "atomicow",
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset_macros",
- "bevy_ecs",
- "bevy_platform",
- "bevy_reflect",
- "bevy_tasks",
- "bevy_utils",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_tasks 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bitflags 2.9.1",
  "blake3",
@@ -421,8 +446,9 @@ dependencies = [
 [[package]]
 name = "bevy_asset_macros"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
  "proc-macro2",
  "quote",
  "syn",
@@ -431,13 +457,14 @@ dependencies = [
 [[package]]
 name = "bevy_audio"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_math",
- "bevy_reflect",
+ "bevy_reflect 0.16.0-dev",
  "bevy_transform",
  "cpal",
  "rodio",
@@ -447,9 +474,10 @@ dependencies = [
 [[package]]
 name = "bevy_color"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "bevy_math",
- "bevy_reflect",
+ "bevy_reflect 0.16.0-dev",
  "bytemuck",
  "derive_more",
  "encase",
@@ -461,20 +489,21 @@ dependencies = [
 [[package]]
 name = "bevy_core_pipeline"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
- "bevy_derive",
+ "bevy_derive 0.16.0-dev",
  "bevy_diagnostic",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bitflags 2.9.1",
  "bytemuck",
@@ -489,8 +518,20 @@ dependencies = [
 [[package]]
 name = "bevy_derive"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "bevy_derive"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1b837bf6c51806b10ebfa9edf1844ad80a3a0760d6c5fac4e90761df91a8901a"
+dependencies = [
+ "bevy_macro_utils 0.16.1",
  "quote",
  "syn",
 ]
@@ -498,13 +539,14 @@ dependencies = [
 [[package]]
 name = "bevy_diagnostic"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
- "bevy_platform",
- "bevy_tasks",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_tasks 0.16.0-dev",
  "bevy_time",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "const-fnv1a-hash",
  "log",
  "serde",
@@ -514,14 +556,15 @@ dependencies = [
 [[package]]
 name = "bevy_ecs"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "arrayvec",
- "bevy_ecs_macros",
- "bevy_platform",
- "bevy_ptr",
- "bevy_reflect",
- "bevy_tasks",
- "bevy_utils",
+ "bevy_ecs_macros 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_ptr 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_tasks 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "bitflags 2.9.1",
  "bumpalo",
  "concurrent-queue",
@@ -538,10 +581,49 @@ dependencies = [
 ]
 
 [[package]]
+name = "bevy_ecs"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3c2bf6521aae57a0ec3487c4bfb59e36c4a378e834b626a4bea6a885af2fdfe7"
+dependencies = [
+ "bevy_ecs_macros 0.16.1",
+ "bevy_platform 0.16.1",
+ "bevy_ptr 0.16.1",
+ "bevy_reflect 0.16.1",
+ "bevy_tasks 0.16.1",
+ "bevy_utils 0.16.1",
+ "bitflags 2.9.1",
+ "bumpalo",
+ "concurrent-queue",
+ "derive_more",
+ "disqualified",
+ "fixedbitset",
+ "indexmap",
+ "log",
+ "nonmax",
+ "smallvec",
+ "thiserror 2.0.12",
+ "variadics_please",
+]
+
+[[package]]
 name = "bevy_ecs_macros"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "bevy_ecs_macros"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "38748d6f3339175c582d751f410fb60a93baf2286c3deb7efebb0878dce7f413"
+dependencies = [
+ "bevy_macro_utils 0.16.1",
  "proc-macro2",
  "quote",
  "syn",
@@ -550,21 +632,23 @@ dependencies = [
 [[package]]
 name = "bevy_encase_derive"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
  "encase_derive_impl",
 ]
 
 [[package]]
 name = "bevy_gilrs"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_input",
- "bevy_platform",
+ "bevy_platform 0.16.0-dev",
  "bevy_time",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "gilrs",
  "thiserror 2.0.12",
  "tracing",
@@ -573,22 +657,23 @@ dependencies = [
 [[package]]
 name = "bevy_gizmos"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
  "bevy_core_pipeline",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_gizmos_macros",
  "bevy_image",
  "bevy_math",
  "bevy_pbr",
- "bevy_reflect",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_sprite",
  "bevy_time",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bytemuck",
  "tracing",
 ]
@@ -596,8 +681,9 @@ dependencies = [
 [[package]]
 name = "bevy_gizmos_macros"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
  "proc-macro2",
  "quote",
  "syn",
@@ -606,25 +692,26 @@ dependencies = [
 [[package]]
 name = "bevy_gltf"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "base64 0.22.1",
  "bevy_animation",
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
  "bevy_core_pipeline",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_math",
  "bevy_mesh",
  "bevy_pbr",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_scene",
- "bevy_tasks",
+ "bevy_tasks 0.16.0-dev",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "fixedbitset",
  "gltf",
  "itertools 0.14.0",
@@ -639,15 +726,16 @@ dependencies = [
 [[package]]
 name = "bevy_image"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
- "bevy_utils",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "bitflags 2.9.1",
  "bytemuck",
  "futures-lite",
@@ -666,13 +754,14 @@ dependencies = [
 [[package]]
 name = "bevy_input"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
- "bevy_utils",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "derive_more",
  "log",
  "smol_str",
@@ -682,12 +771,13 @@ dependencies = [
 [[package]]
 name = "bevy_input_focus"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_input",
  "bevy_math",
- "bevy_reflect",
+ "bevy_reflect 0.16.0-dev",
  "bevy_window",
  "log",
  "thiserror 2.0.12",
@@ -696,18 +786,19 @@ dependencies = [
 [[package]]
 name = "bevy_internal"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "bevy_a11y",
  "bevy_animation",
  "bevy_anti_aliasing",
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_audio",
  "bevy_color",
  "bevy_core_pipeline",
- "bevy_derive",
+ "bevy_derive 0.16.0-dev",
  "bevy_diagnostic",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_gilrs",
  "bevy_gizmos",
  "bevy_gltf",
@@ -718,19 +809,19 @@ dependencies = [
  "bevy_math",
  "bevy_pbr",
  "bevy_picking",
- "bevy_platform",
- "bevy_ptr",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_ptr 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_scene",
  "bevy_sprite",
  "bevy_state",
- "bevy_tasks",
+ "bevy_tasks 0.16.0-dev",
  "bevy_text",
  "bevy_time",
  "bevy_transform",
  "bevy_ui",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bevy_winit",
 ]
@@ -738,12 +829,13 @@ dependencies = [
 [[package]]
 name = "bevy_log"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "android_log-sys",
- "bevy_app",
- "bevy_ecs",
- "bevy_platform",
- "bevy_utils",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "tracing",
  "tracing-log",
  "tracing-oslog",
@@ -754,6 +846,20 @@ dependencies = [
 [[package]]
 name = "bevy_macro_utils"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
+dependencies = [
+ "parking_lot",
+ "proc-macro2",
+ "quote",
+ "syn",
+ "toml_edit",
+]
+
+[[package]]
+name = "bevy_macro_utils"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "052eeebcb8e7e072beea5031b227d9a290f8a7fbbb947573ab6ec81df0fb94be"
 dependencies = [
  "parking_lot",
  "proc-macro2",
@@ -765,9 +871,10 @@ dependencies = [
 [[package]]
 name = "bevy_math"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "approx",
- "bevy_reflect",
+ "bevy_reflect 0.16.0-dev",
  "derive_more",
  "glam",
  "itertools 0.14.0",
@@ -783,17 +890,18 @@ dependencies = [
 [[package]]
 name = "bevy_mesh"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "bevy_asset",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_math",
  "bevy_mikktspace",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bitflags 2.9.1",
  "bytemuck",
  "hexasphere",
@@ -806,6 +914,7 @@ dependencies = [
 [[package]]
 name = "bevy_mikktspace"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "glam",
 ]
@@ -813,21 +922,22 @@ dependencies = [
 [[package]]
 name = "bevy_pbr"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
  "bevy_core_pipeline",
- "bevy_derive",
+ "bevy_derive 0.16.0-dev",
  "bevy_diagnostic",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bitflags 2.9.1",
  "bytemuck",
@@ -845,20 +955,21 @@ dependencies = [
 [[package]]
 name = "bevy_picking"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_input",
  "bevy_math",
  "bevy_mesh",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_time",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "crossbeam-channel",
  "tracing",
@@ -868,6 +979,7 @@ dependencies = [
 [[package]]
 name = "bevy_platform"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "critical-section",
  "foldhash",
@@ -876,23 +988,79 @@ dependencies = [
  "portable-atomic",
  "portable-atomic-util",
  "serde",
- "spin",
+ "spin 0.10.0",
  "web-time",
+]
+
+[[package]]
+name = "bevy_platform"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7573dc824a1b08b4c93fdbe421c53e1e8188e9ca1dd74a414455fe571facb47"
+dependencies = [
+ "cfg-if",
+ "foldhash",
+ "hashbrown",
+ "portable-atomic",
+ "portable-atomic-util",
+ "serde",
+ "spin 0.9.8",
+]
+
+[[package]]
+name = "bevy_prng"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41c76ebff351c2123628086ccef32fb9ae476519dc13f605d3680c17da5c40fb"
+dependencies = [
+ "bevy_reflect 0.16.1",
+ "rand_chacha 0.9.0",
+ "rand_core 0.6.4",
+ "rand_core 0.9.3",
+ "rand_pcg",
+ "rand_xoshiro",
+ "serde",
+ "wyrand",
 ]
 
 [[package]]
 name = "bevy_ptr"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
+
+[[package]]
+name = "bevy_ptr"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "df7370d0e46b60e071917711d0860721f5347bc958bf325975ae6913a5dfcf01"
+
+[[package]]
+name = "bevy_rand"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "33ae51425b1886ff7c5a4a74fe2f4d0191b8e59f6409e3c84a3fccdbc8b63a93"
+dependencies = [
+ "bevy_app 0.16.1",
+ "bevy_ecs 0.16.1",
+ "bevy_prng",
+ "bevy_reflect 0.16.1",
+ "getrandom 0.3.3",
+ "rand_chacha 0.9.0",
+ "rand_core 0.6.4",
+ "rand_core 0.9.3",
+ "serde",
+]
 
 [[package]]
 name = "bevy_reflect"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "assert_type_match",
- "bevy_platform",
- "bevy_ptr",
- "bevy_reflect_derive",
- "bevy_utils",
+ "bevy_platform 0.16.0-dev",
+ "bevy_ptr 0.16.0-dev",
+ "bevy_reflect_derive 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "derive_more",
  "disqualified",
  "downcast-rs",
@@ -910,10 +1078,46 @@ dependencies = [
 ]
 
 [[package]]
+name = "bevy_reflect"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "daeb91a63a1a4df00aa58da8cc4ddbd4b9f16ab8bb647c5553eb156ce36fa8c2"
+dependencies = [
+ "assert_type_match",
+ "bevy_platform 0.16.1",
+ "bevy_ptr 0.16.1",
+ "bevy_reflect_derive 0.16.1",
+ "bevy_utils 0.16.1",
+ "derive_more",
+ "disqualified",
+ "downcast-rs",
+ "erased-serde",
+ "foldhash",
+ "serde",
+ "smallvec",
+ "thiserror 2.0.12",
+ "variadics_please",
+]
+
+[[package]]
 name = "bevy_reflect_derive"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
+ "proc-macro2",
+ "quote",
+ "syn",
+ "uuid",
+]
+
+[[package]]
+name = "bevy_reflect_derive"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "40ddadc55fe16b45faaa54ab2f9cb00548013c74812e8b018aa172387103cce6"
+dependencies = [
+ "bevy_macro_utils 0.16.1",
  "proc-macro2",
  "quote",
  "syn",
@@ -923,25 +1127,26 @@ dependencies = [
 [[package]]
 name = "bevy_render"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "async-channel",
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
- "bevy_derive",
+ "bevy_derive 0.16.0-dev",
  "bevy_diagnostic",
- "bevy_ecs",
+ "bevy_ecs 0.16.0-dev",
  "bevy_encase_derive",
  "bevy_image",
  "bevy_math",
  "bevy_mesh",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render_macros",
- "bevy_tasks",
+ "bevy_tasks 0.16.0-dev",
  "bevy_time",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bitflags 2.9.1",
  "bytemuck",
@@ -972,8 +1177,9 @@ dependencies = [
 [[package]]
 name = "bevy_render_macros"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
  "proc-macro2",
  "quote",
  "syn",
@@ -982,16 +1188,17 @@ dependencies = [
 [[package]]
 name = "bevy_scene"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
- "bevy_derive",
- "bevy_ecs",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "derive_more",
  "serde",
  "thiserror 2.0.12",
@@ -1001,21 +1208,22 @@ dependencies = [
 [[package]]
 name = "bevy_sprite"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
  "bevy_core_pipeline",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_math",
  "bevy_picking",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bitflags 2.9.1",
  "bytemuck",
@@ -1029,13 +1237,14 @@ dependencies = [
 [[package]]
 name = "bevy_state"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_state_macros",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "log",
  "variadics_please",
 ]
@@ -1043,8 +1252,9 @@ dependencies = [
 [[package]]
 name = "bevy_state_macros"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_macro_utils",
+ "bevy_macro_utils 0.16.0-dev",
  "proc-macro2",
  "quote",
  "syn",
@@ -1053,12 +1263,13 @@ dependencies = [
 [[package]]
 name = "bevy_tasks"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "async-channel",
  "async-executor",
  "async-task",
  "atomic-waker",
- "bevy_platform",
+ "bevy_platform 0.16.0-dev",
  "cfg-if",
  "concurrent-queue",
  "crossbeam-queue",
@@ -1071,23 +1282,40 @@ dependencies = [
 ]
 
 [[package]]
+name = "bevy_tasks"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b674242641cab680688fc3b850243b351c1af49d4f3417a576debd6cca8dcf5"
+dependencies = [
+ "async-task",
+ "atomic-waker",
+ "bevy_platform 0.16.1",
+ "cfg-if",
+ "crossbeam-queue",
+ "derive_more",
+ "futures-lite",
+ "heapless",
+]
+
+[[package]]
 name = "bevy_text"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_log",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_sprite",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "cosmic-text",
  "serde",
@@ -1101,11 +1329,12 @@ dependencies = [
 [[package]]
 name = "bevy_time"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "crossbeam-channel",
  "log",
  "serde",
@@ -1114,14 +1343,15 @@ dependencies = [
 [[package]]
 name = "bevy_transform"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_app",
- "bevy_ecs",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_log",
  "bevy_math",
- "bevy_reflect",
- "bevy_tasks",
- "bevy_utils",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_tasks 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "derive_more",
  "serde",
  "thiserror 2.0.12",
@@ -1130,26 +1360,27 @@ dependencies = [
 [[package]]
 name = "bevy_ui"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "accesskit",
  "bevy_a11y",
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
  "bevy_color",
  "bevy_core_pipeline",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_input",
  "bevy_math",
  "bevy_picking",
- "bevy_platform",
- "bevy_reflect",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
  "bevy_render",
  "bevy_sprite",
  "bevy_text",
  "bevy_transform",
- "bevy_utils",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bytemuck",
  "derive_more",
@@ -1164,24 +1395,35 @@ dependencies = [
 [[package]]
 name = "bevy_utils"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
- "bevy_platform",
+ "bevy_platform 0.16.0-dev",
  "send_wrapper",
  "thread_local",
 ]
 
 [[package]]
+name = "bevy_utils"
+version = "0.16.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "94f7a8905a125d2017e8561beefb7f2f5e67e93ff6324f072ad87c5fd6ec3b99"
+dependencies = [
+ "bevy_platform 0.16.1",
+]
+
+[[package]]
 name = "bevy_window"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "android-activity",
- "bevy_app",
- "bevy_ecs",
+ "bevy_app 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_input",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
- "bevy_utils",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "log",
  "raw-window-handle",
  "serde",
@@ -1191,24 +1433,25 @@ dependencies = [
 [[package]]
 name = "bevy_winit"
 version = "0.16.0-dev"
+source = "git+https://github.com/bevyengine/bevy.git#3dc6a07d27e132ea81985809d0636da230cde320"
 dependencies = [
  "accesskit",
  "accesskit_winit",
  "approx",
  "bevy_a11y",
- "bevy_app",
+ "bevy_app 0.16.0-dev",
  "bevy_asset",
- "bevy_derive",
- "bevy_ecs",
+ "bevy_derive 0.16.0-dev",
+ "bevy_ecs 0.16.0-dev",
  "bevy_image",
  "bevy_input",
  "bevy_input_focus",
  "bevy_log",
  "bevy_math",
- "bevy_platform",
- "bevy_reflect",
- "bevy_tasks",
- "bevy_utils",
+ "bevy_platform 0.16.0-dev",
+ "bevy_reflect 0.16.0-dev",
+ "bevy_tasks 0.16.0-dev",
+ "bevy_utils 0.16.0-dev",
  "bevy_window",
  "bytemuck",
  "cfg-if",
@@ -1994,6 +2237,7 @@ name = "fuzzy-octo-rotary-phone"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "bevy_rand",
 ]
 
 [[package]]
@@ -3331,8 +3575,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
 dependencies = [
  "libc",
- "rand_chacha",
- "rand_core",
+ "rand_chacha 0.3.1",
+ "rand_core 0.6.4",
 ]
 
 [[package]]
@@ -3342,7 +3586,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6c10a63a0fa32252be49d21e7709d4d4baf8d231c2dbce1eaa8141b9b127d88"
 dependencies = [
  "ppv-lite86",
- "rand_core",
+ "rand_core 0.6.4",
+]
+
+[[package]]
+name = "rand_chacha"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d3022b5f1df60f26e1ffddd6c66e8aa15de382ae63b3a0c1bfc0e4d3e3f325cb"
+dependencies = [
+ "ppv-lite86",
+ "rand_core 0.9.3",
+ "serde",
 ]
 
 [[package]]
@@ -3355,6 +3610,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "rand_core"
+version = "0.9.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "99d9a13982dcf210057a8a78572b2217b667c3beacbf3a0d8b454f6f82837d38"
+dependencies = [
+ "getrandom 0.3.3",
+ "serde",
+]
+
+[[package]]
 name = "rand_distr"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3362,6 +3627,26 @@ checksum = "32cb0b9bc82b0a0876c2dd994a7e7a2683d3e7390ca40e6886785ef0c7e3ee31"
 dependencies = [
  "num-traits",
  "rand",
+]
+
+[[package]]
+name = "rand_pcg"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b48ac3f7ffaab7fac4d2376632268aa5f89abdb55f7ebf8f4d11fffccb2320f7"
+dependencies = [
+ "rand_core 0.9.3",
+ "serde",
+]
+
+[[package]]
+name = "rand_xoshiro"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f703f4665700daf5512dcca5f43afa6af89f09db47fb56be587f80636bda2d41"
+dependencies = [
+ "rand_core 0.9.3",
+ "serde",
 ]
 
 [[package]]
@@ -3685,6 +3970,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dd538fb6910ac1099850255cf94a94df6551fbdd602454387d0adb2d1ca6dead"
 dependencies = [
  "serde",
+]
+
+[[package]]
+name = "spin"
+version = "0.9.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6980e8d7511241f8acf4aebddbb1ff938df5eebe98691418c4468d0b72a96a67"
+dependencies = [
+ "portable-atomic",
 ]
 
 [[package]]
@@ -4901,6 +5195,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f42320e61fe2cfd34354ecb597f86f413484a798ba44a8ca1165c58d42da6c1"
 dependencies = [
  "bitflags 2.9.1",
+]
+
+[[package]]
+name = "wyrand"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "15e0359b0b8d9cdef235a1fd4a8c5d02e4c9204e9fac861c14c229a8e803d1a6"
+dependencies = [
+ "rand_core 0.9.3",
+ "serde",
 ]
 
 [[package]]
