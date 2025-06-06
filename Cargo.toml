@@ -5,5 +5,5 @@ edition = "2024"
 
 [dependencies]
 bevy = { git = "https://github.com/bevyengine/bevy.git" }
-bevy_rand = { version = "0.11.0", features=["rand_chacha", "wyrand"]}
+rand = "0.9.1"
 

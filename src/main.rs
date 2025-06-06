@@ -1,8 +1,10 @@
 use bevy::{app::ScheduleRunnerPlugin, prelude::*};
+use rand::prelude::*;
 use std::time::Duration;
 
 mod blob;
 use blob::Blob;
+
 mod position;
 use position::Position;
 
@@ -23,9 +25,19 @@ fn setup(mut commands: Commands) {
 }
 
 fn move_blobs(query: Query<&mut Position, With<Blob>>) {
+    let mut rng = rand::rng();
+
     for mut p in query {
-        p.0 += 1.;
-        p.1 += 1.;
+        let right = rng.random::<bool>();
+        let down = rng.random::<bool>();
+        match right {
+            false => p.0 -= 1.0,
+            true => p.0 += 1.0,
+        }
+        match down {
+            false => p.1 -= 1.0,
+            true => p.1 += 1.0,
+        }
     }
 }
 
