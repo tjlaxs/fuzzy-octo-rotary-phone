@@ -1,4 +1,6 @@
-use bevy::{app::ScheduleRunnerPlugin, prelude::*};
+use bevy_app::{App, PluginGroup, ScheduleRunnerPlugin, Startup, Update};
+use bevy_ecs::prelude::*;
+use bevy_internal::MinimalPlugins;
 use rand::prelude::*;
 use std::time::Duration;
 
