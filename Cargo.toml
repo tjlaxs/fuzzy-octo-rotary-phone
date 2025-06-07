@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy.git" }
+bevy_app = { git = "https://github.com/bevyengine/bevy.git" }
+bevy_ecs = { git = "https://github.com/bevyengine/bevy.git" }
+bevy_internal = { git = "https://github.com/bevyengine/bevy.git" }
 rand = "0.9.1"
 
